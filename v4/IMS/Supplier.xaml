@@ -1,0 +1,110 @@
+﻿<Window x:Class="Inventory_managment.Supplier"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Supplier Management" Height="846" Width="800"
+        Background="#F0F4F8" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="0,5,0,5"/>
+            <Setter Property="Foreground" Value="#333"/>
+        </Style>
+
+        <Style TargetType="TextBox">
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#008080"/>
+            <Setter Property="BorderThickness" Value="1"/>
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Height" Value="35"/>
+            <Setter Property="Margin" Value="0,10,0,0"/>
+            <Setter Property="Background" Value="#008080"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Padding" Value="10,0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="1" CornerRadius="5">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value="#FFFFFF"/>
+            <Setter Property="BorderBrush" Value="#008080"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="AlternatingRowBackground" Value="#F1F1F1"/>
+            <Setter Property="RowHeight" Value="30"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+
+        <Style TargetType="DataGridColumnHeader">
+            <Setter Property="Background" Value="#008080"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Padding" Value="5"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="193*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+        <StackPanel Margin="10,10,10,54">
+            <TextBlock Text="Supplier Management" FontSize="28" FontWeight="Bold" Margin="0,0,0,20" Foreground="#008080"/>
+
+            <TextBlock Text="Supplier Name:" FontWeight="Bold"/>
+            <Border CornerRadius="5" BorderBrush="#008080" BorderThickness="1" Margin="0,0,0,10">
+                <TextBox x:Name="txtSupplierName" Padding="5" Background="#FFFFFF"/>
+            </Border>
+
+            <TextBlock Text="Contact Name:" FontWeight="Bold"/>
+            <Border CornerRadius="5" BorderBrush="#008080" BorderThickness="1" Margin="0,0,0,10">
+                <TextBox x:Name="txtContactName" Padding="5" Background="#FFFFFF"/>
+            </Border>
+
+            <TextBlock Text="Phone:" FontWeight="Bold"/>
+            <Border CornerRadius="5" BorderBrush="#008080" BorderThickness="1" Margin="0,0,0,10">
+                <TextBox x:Name="txtPhone" Padding="5" Background="#FFFFFF"/>
+            </Border>
+
+            <TextBlock Text="Email:" FontWeight="Bold"/>
+            <Border CornerRadius="5" BorderBrush="#008080" BorderThickness="1" Margin="0,0,0,10">
+                <TextBox x:Name="txtEmail" Padding="5" Background="#FFFFFF"/>
+            </Border>
+
+            <TextBlock Text="Address:" FontWeight="Bold"/>
+            <Border CornerRadius="5" BorderBrush="#008080" BorderThickness="1" Margin="0,0,0,10">
+                <TextBox x:Name="txtAddress" Padding="5" Background="#FFFFFF"/>
+            </Border>
+
+            <Button Content="Save Supplier" Click="btnSaveSupplier_Click" Margin="0,20,0,0" Width="150"/>
+
+            <TextBlock Text="Purchase History" FontSize="20" FontWeight="Bold" Margin="0,30,0,10"/>
+            <DataGrid x:Name="dataGridPurchaseHistory" AutoGenerateColumns="False" Height="200">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Order ID" Binding="{Binding PurchaseOrderID}"/>
+                    <DataGridTextColumn Header="Order Date" Binding="{Binding OrderDate}"/>
+                    <DataGridTextColumn Header="Total Amount" Binding="{Binding TotalAmount}"/>
+                    <DataGridTextColumn Header="Status" Binding="{Binding Status}"/>
+                </DataGrid.Columns>
+            </DataGrid>
+        </StackPanel>
+    </Grid>
+</Window>

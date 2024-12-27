@@ -1,0 +1,90 @@
+﻿<Window x:Class="InventoryApp.HelpSupport"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Help &amp; Support" Height="600" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid Margin="20">
+        <TabControl Background="Transparent">
+            <TabItem Header="User Manual">
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="User Manual" FontSize="24" FontWeight="Bold" Foreground="#008080"/>
+                        <Expander Header="Getting Started" Margin="0,10">
+                            <TextBlock TextWrapping="Wrap" Margin="10">
+                                Welcome to the Inventory Management System. This system helps you manage products, 
+                                track inventory, handle customer information, and process orders efficiently.
+                            </TextBlock>
+                        </Expander>
+                        <Expander Header="Dashboard Overview" Margin="0,10">
+                            <TextBlock TextWrapping="Wrap" Margin="10">
+                                The dashboard displays key metrics including total stock, sales, purchases, 
+                                and important alerts. Monitor your inventory levels and business performance at a glance.
+                            </TextBlock>
+                        </Expander>
+                        <Expander Header="Managing Products" Margin="0,10">
+                            <TextBlock TextWrapping="Wrap" Margin="10">
+                                Add, update, or remove products through the Products section. 
+                                Track stock levels and set up low stock alerts for efficient inventory management.
+                            </TextBlock>
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="FAQs">
+                <ScrollViewer>
+                    <StackPanel Margin="10">
+                        <TextBlock Text="Frequently Asked Questions" FontSize="24" FontWeight="Bold" Foreground="#008080"/>
+                        <Expander Header="How do I add a new product?" Margin="0,10">
+                            <TextBlock TextWrapping="Wrap" Margin="10">
+                                Navigate to the Products section, click 'Add Product', and fill in the required information.
+                            </TextBlock>
+                        </Expander>
+                        <Expander Header="How do I track low stock items?" Margin="0,10">
+                            <TextBlock TextWrapping="Wrap" Margin="10">
+                                Low stock alerts appear on the dashboard automatically when items fall below the threshold.
+                            </TextBlock>
+                        </Expander>
+                        <Expander Header="How do I generate reports?" Margin="0,10">
+                            <TextBlock TextWrapping="Wrap" Margin="10">
+                                Access the Reports section from the navigation menu and select your desired report type.
+                            </TextBlock>
+                        </Expander>
+                    </StackPanel>
+                </ScrollViewer>
+            </TabItem>
+
+            <TabItem Header="Contact Support">
+                <StackPanel Margin="20">
+                    <TextBlock Text="Contact Support" FontSize="24" FontWeight="Bold" Foreground="#008080" Margin="0,0,0,20"/>
+                    <TextBlock Text="Name:" Margin="0,10,0,5"/>
+                    <TextBox x:Name="NameTextBox" Padding="5"/>
+
+                    <TextBlock Text="Email:" Margin="0,10,0,5"/>
+                    <TextBox x:Name="EmailTextBox" Padding="5"/>
+
+                    <TextBlock Text="Issue Type:" Margin="0,10,0,5"/>
+                    <ComboBox x:Name="IssueTypeComboBox" Padding="5">
+                        <ComboBoxItem Content="Technical Issue"/>
+                        <ComboBoxItem Content="Feature Request"/>
+                        <ComboBoxItem Content="General Question"/>
+                        <ComboBoxItem Content="Bug Report"/>
+                    </ComboBox>
+
+                    <TextBlock Text="Description:" Margin="0,10,0,5"/>
+                    <TextBox x:Name="DescriptionTextBox" Height="100" TextWrapping="Wrap" AcceptsReturn="True" Padding="5"/>
+
+                    <Button Content="Submit" Click="SubmitSupport_Click"
+                            Background="#008080" Foreground="White"
+                            Padding="20,10" Margin="0,20,0,0"
+                            HorizontalAlignment="Left">
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="5"/>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

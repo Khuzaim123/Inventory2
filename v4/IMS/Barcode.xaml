@@ -1,0 +1,84 @@
+﻿ <Window x:Class="Inventory_managment.Barcode"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Barcode Scanner" Height="500" Width="700"
+        Background="LightBlue">
+    <Grid>
+        <!-- Title Text -->
+        <TextBlock Text="Barcode Scanner" 
+                   FontSize="24" 
+                   FontWeight="Bold" 
+                   Foreground="DarkBlue" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top" 
+                   Margin="0,10,0,0" />
+
+        <!-- Input TextBox with Placeholder -->
+        <Grid Margin="0,60,0,0" VerticalAlignment="Top" HorizontalAlignment="Center">
+            <TextBox Name="txtBarcode" 
+                     Width="300" 
+                     Height="40" 
+                     FontSize="16" 
+                     Foreground="DarkSlateGray" 
+                     BorderBrush="DarkBlue" 
+                     BorderThickness="2" 
+                     Background="White" />
+            <TextBlock Name="placeholderTextBlock"
+                       Text="Enter Barcode..." 
+                       FontSize="16" 
+                       Foreground="Gray" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Left" 
+                       Margin="5,0,0,0"
+                       IsHitTestVisible="False"
+                       Visibility="Visible" />
+        </Grid>
+
+        <!-- Search Button -->
+        <Button Name="SearchBarcode" 
+                Content="Search" 
+                Width="120" 
+                Height="40" 
+                Margin="0,120,0,0" 
+                VerticalAlignment="Top" 
+                HorizontalAlignment="Center" 
+                FontSize="16" 
+                Background="RoyalBlue" 
+                Foreground="White" 
+                BorderBrush="DarkBlue" 
+                BorderThickness="2" 
+                Click="SearchBarcode_Click" 
+                Cursor="Hand" />
+
+        <!-- Product Details and Barcode Display -->
+        <Border BorderBrush="DarkBlue" 
+                BorderThickness="2" 
+                Background="White" 
+                CornerRadius="10" 
+                Padding="10" 
+                Margin="20,180,20,20" 
+                VerticalAlignment="Stretch" 
+                HorizontalAlignment="Stretch">
+            <Grid>
+                <!-- Product Details Text -->
+                <TextBlock Name="productDetailsTextBlock" 
+                           Text="Product details will appear here..." 
+                           FontSize="14" 
+                           Foreground="DarkSlateGray" 
+                           TextWrapping="Wrap" 
+                           VerticalAlignment="Top" 
+                           Margin="10,10,10,150" />
+
+                <!-- Barcode Image -->
+                <Image Name="barcodeImage" 
+                       HorizontalAlignment="Center" 
+                       VerticalAlignment="Bottom" 
+                       Width="200" 
+                       Height="100" 
+                       Stretch="Uniform" 
+                       ToolTip="Barcode Image" 
+                       Margin="10" />
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

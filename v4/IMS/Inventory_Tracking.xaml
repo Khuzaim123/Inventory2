@@ -1,0 +1,112 @@
+﻿<Window x:Class="Inventory_managment.Inventory_Tracking"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Inventory Tracking" Height="600" Width="800"
+        Background="#F0F4F8">
+    <Grid>
+        <TextBlock Text="Inventory Tracking" FontSize="24" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,10,0,10" Foreground="#008080"/>
+
+        <TabControl Margin="0,48,20,-28">
+            <!-- Locations Tab -->
+            <TabItem Header="Locations">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Add New Location:" FontWeight="Bold" Foreground="#008080"/>
+
+                    <!-- Location Name Label and TextBox -->
+                    <TextBlock Text="Location Name:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtLocationName" Width="200" Margin="0,5,0,10" />
+
+                    <!-- Address Label and TextBox -->
+                    <TextBlock Text="Address:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtLocationAddress" Width="200" Margin="0,5,0,10" />
+
+                    <!-- Phone Number Label and TextBox -->
+                    <TextBlock Text="Phone Number:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtLocationPhone" Width="200" Margin="0,5,0,10" />
+
+                    <Button Content="Add Location" Click="btnAddLocation_Click" Width="200" Background="#008080" Foreground="White" FontWeight="Bold" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Existing Locations:" FontWeight="Bold" Foreground="#008080" Margin="0,20,0,0"/>
+                    <ListBox x:Name="lstLocations" Height="150" Background="White" Foreground="#333"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Batches Tab -->
+            <TabItem Header="Batches">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Add New Batch:" FontWeight="Bold" Foreground="#008080"/>
+
+                    <!-- Product ID Label and TextBox -->
+                    <TextBlock Text="Product ID:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtBatchProductID" Width="200" Margin="0,5,0,10" />
+
+                    <!-- Batch Number Label and TextBox -->
+                    <TextBlock Text="Batch Number:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtBatchNumber" Width="200" Margin="0,5,0,10" />
+
+                    <!-- Expiry Date Label and TextBox -->
+                    <TextBlock Text="Expiry Date:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtBatchExpiry" Width="200" Margin="0,5,0,10" />
+
+                    <!-- Quantity Label and TextBox -->
+                    <TextBlock Text="Quantity:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtBatchQuantity" Width="200" Margin="0,5,0,10" />
+
+                    <!-- Location Label and ComboBox -->
+                    <TextBlock Text="Select Location:" FontWeight="Bold" Foreground="#008080" Margin="0,5,0,5"/>
+                    <ComboBox x:Name="cmbBatchLocation" Width="200" Margin="0,5,0,10">
+                        <ComboBoxItem Content="Multan"/>
+                        <ComboBoxItem Content="Lahore"/>
+                        <ComboBoxItem Content="Islamabad"/>
+                        <ComboBoxItem Content="United Kingdom"/>
+                    </ComboBox>
+
+                    <Button Content="Add Batch" Click="btnAddBatch_Click" Width="200" Background="#008080" Foreground="White" FontWeight="Bold" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Existing Batches:" FontWeight="Bold" Foreground="#008080" Margin="0,20,0,0"/>
+                    <ListBox x:Name="lstBatches" Height="150" Background="White" Foreground="#333"/>
+                </StackPanel>
+            </TabItem>
+
+            <!-- Stock Movements Tab -->
+            <TabItem Header="Stock Movements">
+                <StackPanel Margin="10,0,-2,0" Height="503">
+                    <TextBlock Text="Record Stock Movement:" FontWeight="Bold" Foreground="#008080"/>
+                    <TextBlock Text="Product ID:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtMovementProductID" Width="200" Margin="0,5,0,10" />
+                    <TextBlock Text="Quantity:" FontWeight="Bold" Foreground="#333" Margin="0,5,0,0"/>
+                    <TextBox x:Name="txtMovementQuantity" Width="200" Margin="0,5,0,10" />
+
+                    <TextBlock Text="Movement Type:" FontWeight="Bold" Foreground="#008080" Margin="0,5,0,5"/>
+                    <ComboBox x:Name="cmbMovementType" Width="200" Margin="0,5,0,10">
+                        <ComboBoxItem Content="IN"/>
+                        <ComboBoxItem Content="OUT"/>
+                        <ComboBoxItem Content="TRANSFER"/>
+                        <ComboBoxItem Content="ADJUSTMENT"/>
+                    </ComboBox>
+
+                    <TextBlock Text="Source Location:" FontWeight="Bold" Foreground="#008080" Margin="0,5,0,5"/>
+                    <ComboBox x:Name="cmbSourceLocation" Width="200" Margin="0,5,0,10">
+                        <ComboBoxItem Content="Multan"/>
+                        <ComboBoxItem Content="Lahore"/>
+                        <ComboBoxItem Content="Islamabad"/>
+                        <ComboBoxItem Content="United Kingdom"/>
+                    </ComboBox>
+
+                    <TextBlock Text="Destination Location:" FontWeight="Bold" Foreground="#008080" Margin="0,5,0,5"/>
+                    <ComboBox x:Name="cmbDestinationLocation" Width="200" Margin="0,5,0,10">
+                        <ComboBoxItem Content="Multan"/>
+                        <ComboBoxItem Content="Lahore"/>
+                        <ComboBoxItem Content="Islamabad"/>
+                        <ComboBoxItem Content="United Kingdom"/>
+                    </ComboBox>
+
+                    <Button Content="Record Movement" Click="btnRecordMovement_Click" Width="200" Background="#008080" Foreground="White" FontWeight="Bold" Margin="0,5,0,10"/>
+
+                    <TextBlock Text="Movement History:" FontWeight="Bold" Foreground="#008080" Margin="0,20,0,0"/>
+                    <ListBox x:Name="lstMovementHistory" Height="150" Background="White" Foreground="#333"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
