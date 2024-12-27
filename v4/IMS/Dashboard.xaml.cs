@@ -362,5 +362,11 @@ namespace InventoryApp
             Audit audit = new Audit();
             audit.Show();
         }
+
+        private void sett_Click(object sender, RoutedEventArgs e)
+        {
+            Setting setting = new Setting();
+            setting.Show();
+        }
     }
 }

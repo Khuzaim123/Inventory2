@@ -1057,3 +1057,105 @@ C:\Users\Khuzaim\OneDrive\Desktop\v4\v4\IMS\obj\Debug\net8.0-windows\refint\Inve
 C:\Users\Khuzaim\OneDrive\Desktop\v4\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.pdb
 C:\Users\Khuzaim\OneDrive\Desktop\v4\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.genruntimeconfig.cache
 C:\Users\Khuzaim\OneDrive\Desktop\v4\v4\IMS\obj\Debug\net8.0-windows\ref\Inventory managment.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Inventory managment.exe
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Inventory managment.deps.json
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Inventory managment.runtimeconfig.json
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Inventory managment.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Inventory managment.pdb
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Data.SqlClient.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\System.Windows.Extensions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-arm64\native\sni.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-x64\native\sni.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win-x86\native\sni.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.Data.SqlClient.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.SqlClient.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.csproj.AssemblyReference.cache
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Barcode.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\customer.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Dashboard.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\HelpSupport.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory_Tracking.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\LoginForm.xaml.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\MainWindow.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Order.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Product.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Reports.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Signupform.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Supplier.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Window1.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Barcode.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\customer.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Dashboard.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\HelpSupport.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory_Tracking.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\LoginForm.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\LoginForm.xaml.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Order.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Product.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Reports.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Setting.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Signupform.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Supplier.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Window1.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\App.g.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment_MarkupCompile.cache
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment_MarkupCompile.lref
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\LoginForm.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Setting.baml
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.g.resources
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.GeneratedMSBuildEditorConfig.editorconfig
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.AssemblyInfoInputs.cache
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.AssemblyInfo.cs
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.csproj.CoreCompileInputs.cache
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.sourcelink.json
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventor.782D41A6.Up2Date
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\refint\Inventory managment.dll
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.pdb
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\Inventory managment.genruntimeconfig.cache
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\ref\Inventory managment.dll

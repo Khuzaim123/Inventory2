@@ -7,7 +7,7 @@ namespace Inventory_managment
 {
     public partial class Barcode : Window
     {
-        private string connectionString = "Data Source=KHUZAIM-PC;Initial Catalog=project;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
+        private string connectionString = "Data Source=KHUZAIM-PC;Initial Catalog=master;Integrated Security=True;Encrypt=True;Trust Server Certificate=True";
         public Barcode()
         {
             InitializeComponent();

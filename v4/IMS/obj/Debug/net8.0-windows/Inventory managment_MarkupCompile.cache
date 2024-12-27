@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Khuzaim\OneDrive\Desktop\v4\v4\IMS\obj\Debug\net8.0-windows\
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\obj\Debug\net8.0-windows\
 Inventory_managment
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\Khuzaim\OneDrive\Desktop\v4\v4\IMS\App.xaml
-14259515999
+D:\university\Projects\Visual Programing\Inventory2\v4\IMS\App.xaml
+15-1750002500
 
-172108598763
+18-950027637
 229570570062
-Barcode.xaml;customer.xaml;Dashboard.xaml;HelpSupport.xaml;Inventory_Tracking.xaml;LoginForm.xaml;LoginForm.xaml.xaml;MainWindow.xaml;Order.xaml;Product.xaml;Reports.xaml;Signupform.xaml;Supplier.xaml;Window1.xaml;
+Barcode.xaml;customer.xaml;Dashboard.xaml;HelpSupport.xaml;Inventory_Tracking.xaml;LoginForm.xaml;LoginForm.xaml.xaml;MainWindow.xaml;Order.xaml;Product.xaml;Reports.xaml;Setting.xaml;Signupform.xaml;Supplier.xaml;Window1.xaml;
 
 False
 

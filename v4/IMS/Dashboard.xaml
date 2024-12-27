@@ -56,8 +56,6 @@
                         <TextBlock Text="{Binding TotalStock}" FontSize="24" FontWeight="Bold" Foreground="White" HorizontalAlignment="Center" />
                     </StackPanel>
                 </Border>
-
-                <!-- Low Stock Alerts -->
                 <Border Style="{StaticResource MetricBoxStyle}" Background="LightCoral">
                     <StackPanel>
                         <TextBlock Text="Low Stock Alerts" FontSize="16" FontWeight="Bold" Foreground="White" />
@@ -70,6 +68,8 @@
                         </ItemsControl>
                     </StackPanel>
                 </Border>
+
+                <!-- Low Stock Alerts -->
 
                 <!-- Total Sales -->
                 <Border Style="{StaticResource MetricBoxStyle}" Background="LightGreen">
@@ -87,6 +87,16 @@
                     </StackPanel>
                 </Border>
             </StackPanel>
+            <Button x:Name="sett" Content="Setting and Configruation" Height="47" Width="158" RenderTransformOrigin="180,0.5" Background="White" Click="sett_Click">
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="-0.605"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Button.RenderTransform>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>
