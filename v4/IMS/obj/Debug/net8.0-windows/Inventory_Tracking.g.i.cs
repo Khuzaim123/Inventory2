@@ -180,7 +180,7 @@ namespace Inventory_managment {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/inventory_tracking.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/inventory_tracking.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Inventory_Tracking.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -148,7 +148,7 @@ namespace Inventory_managment {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/product.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/product.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Product.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

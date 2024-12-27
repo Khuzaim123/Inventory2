@@ -116,7 +116,7 @@ namespace InventoryApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/customer.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/customer.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\customer.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

@@ -100,7 +100,7 @@ namespace Inventory_managment {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/supplier.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/supplier.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Supplier.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

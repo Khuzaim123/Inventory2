@@ -68,7 +68,7 @@ namespace InventoryApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/loginform.xaml.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/loginform.xaml.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\LoginForm.xaml.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

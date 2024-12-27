@@ -76,7 +76,7 @@ namespace InventoryApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/signupform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/signupform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Signupform.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

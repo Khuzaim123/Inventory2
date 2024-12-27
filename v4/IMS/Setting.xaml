@@ -6,7 +6,136 @@
         xmlns:local="clr-namespace:Inventory_managment"
         mc:Ignorable="d"
         Title="System Settings" Height="700" Width="1000"
-        WindowStartupLocation="CenterScreen">
+        WindowStartupLocation="CenterScreen"
+        Background="#F0F4F8">
+
+    <Window.Resources>
+        <!-- Style for TabControl -->
+        <Style TargetType="TabControl">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <!-- Style for TabItems -->
+        <Style TargetType="TabItem">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TabItem">
+                        <Border Name="Border" BorderThickness="0" 
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="4,4,0,0" Margin="2,0">
+                            <ContentPresenter x:Name="ContentSite"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                            ContentSource="Header"
+                                            Margin="10,5"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsSelected" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="#008080"/>
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsSelected" Value="False">
+                                <Setter TargetName="Border" Property="Background" Value="#E0E0E0"/>
+                                <Setter Property="Foreground" Value="#333333"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for Buttons -->
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#008080"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="15,8"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderThickness="0"
+                                CornerRadius="4">
+                            <ContentPresenter HorizontalAlignment="Center" 
+                                            VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#006666"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for DataGrid -->
+        <Style TargetType="DataGrid">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="BorderBrush" Value="#DDDDDD"/>
+            <Setter Property="RowBackground" Value="White"/>
+            <Setter Property="AlternatingRowBackground" Value="#F5F5F5"/>
+            <Setter Property="HeadersVisibility" Value="Column"/>
+            <Setter Property="GridLinesVisibility" Value="Horizontal"/>
+            <Setter Property="HorizontalGridLinesBrush" Value="#EEEEEE"/>
+            <Setter Property="ColumnHeaderStyle">
+                <Setter.Value>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#008080"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="Padding" Value="10,8"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,0"/>
+                        <Setter Property="BorderBrush" Value="#006666"/>
+                    </Style>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for GroupBox -->
+        <Style TargetType="GroupBox">
+            <Setter Property="Margin" Value="0,0,0,10"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="BorderBrush" Value="#DDDDDD"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <Border Background="{TemplateBinding Background}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                CornerRadius="4">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <Border Background="#008080"
+                                        CornerRadius="4,4,0,0">
+                                    <TextBlock Text="{TemplateBinding Header}"
+                                             Foreground="White"
+                                             Margin="10,5"
+                                             FontWeight="Bold"/>
+                                </Border>
+                                <ContentPresenter Grid.Row="1"
+                                                Margin="{TemplateBinding Padding}"/>
+                            </Grid>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style for TextBlock -->
+        <Style TargetType="TextBlock" x:Key="HeaderStyle">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#008080"/>
+            <Setter Property="Margin" Value="0,0,0,5"/>
+        </Style>
+    </Window.Resources>
+
     <Grid Margin="20">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -16,8 +145,9 @@
 
         <!-- Header -->
         <TextBlock Text="System Settings" 
-                 FontSize="24" 
+                 FontSize="28" 
                  FontWeight="Bold" 
+                 Foreground="#008080"
                  Margin="0,0,0,20"/>
 
         <!-- Main Content -->
@@ -32,9 +162,9 @@
 
                     <StackPanel Grid.Row="0" Margin="0,0,0,10">
                         <WrapPanel>
-                            <Button x:Name="btnAddUser" Content="Add New User" Width="100" Margin="0,0,10,0" Click="btnAddUser_Click"/>
-                            <Button x:Name="btnDeleteUser" Content="Delete User" Width="100" Margin="0,0,10,0" Click="btnDeleteUser_Click"/>
-                            <Button x:Name="btnUpdateRole" Content="Update Role" Width="100" Click="btnUpdateRole_Click"/>
+                            <Button x:Name="btnAddUser" Content="Add New User" Width="120" Margin="0,0,10,0" Click="btnAddUser_Click"/>
+                            <Button x:Name="btnDeleteUser" Content="Delete User" Width="120" Margin="0,0,10,0" Click="btnDeleteUser_Click"/>
+                            <Button x:Name="btnUpdateRole" Content="Update Role" Width="120" Click="btnUpdateRole_Click"/>
                         </WrapPanel>
                     </StackPanel>
 
@@ -62,7 +192,7 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Row="0" Margin="0,0,0,10">
-                        <TextBlock Text="Total Customers:" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock Text="Total Customers:" Style="{StaticResource HeaderStyle}"/>
                         <TextBlock x:Name="txtTotalCustomers" FontSize="24" Margin="0,5,0,10"/>
                         <WrapPanel>
                             <Button x:Name="btnDeleteCustomer" Content="Delete Customer" Width="120" Margin="0,0,10,0" Click="btnDeleteCustomer_Click"/>
@@ -95,7 +225,7 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Row="0" Margin="0,0,0,10">
-                        <TextBlock Text="Total Products:" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock Text="Total Products:" Style="{StaticResource HeaderStyle}"/>
                         <TextBlock x:Name="txtTotalProducts" FontSize="24" Margin="0,5,0,10"/>
                         <WrapPanel>
                             <Button x:Name="btnDeleteProduct" Content="Delete Product" Width="120" Margin="0,0,10,0" Click="btnDeleteProduct_Click"/>
@@ -129,7 +259,7 @@
                     </Grid.RowDefinitions>
 
                     <StackPanel Grid.Row="0" Margin="0,0,0,10">
-                        <TextBlock Text="Total Suppliers:" FontSize="16" FontWeight="Bold"/>
+                        <TextBlock Text="Total Suppliers:" Style="{StaticResource HeaderStyle}"/>
                         <TextBlock x:Name="txtTotalSuppliers" FontSize="24" Margin="0,5,0,10"/>
                         <WrapPanel>
                             <Button x:Name="btnDeleteSupplier" Content="Delete Supplier" Width="120" Margin="0,0,10,0" Click="btnDeleteSupplier_Click"/>
@@ -153,8 +283,8 @@
                 </Grid>
             </TabItem>
 
-            <!-- Original Inventory Settings Tab -->
-            <TabItem Header="System Settings" Height="20" VerticalAlignment="Bottom">
+            <!-- System Settings Tab -->
+            <TabItem Header="System Settings">
                 <ScrollViewer>
                     <StackPanel Margin="10">
                         <!-- Support Tickets Section -->
@@ -172,7 +302,6 @@
                                 </DataGrid.Columns>
                             </DataGrid>
                         </GroupBox>
-
                         <!-- Locations Section -->
                         <GroupBox Header="System Locations" Margin="0,0,0,10">
                             <DataGrid x:Name="dgLocations" 
@@ -188,6 +317,55 @@
                                 </DataGrid.Columns>
                             </DataGrid>
                         </GroupBox>
+
+                        <!-- System Configuration Section -->
+                        <GroupBox Header="System Configuration" Margin="0,0,0,10">
+                            <StackPanel Margin="5">
+                                <TextBlock Text="Database Settings" Style="{StaticResource HeaderStyle}"/>
+                                <Grid Margin="0,5,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Text="Server:" Grid.Row="0" Grid.Column="0" Margin="0,5"/>
+                                    <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5"/>
+
+                                    <TextBlock Text="Database Name:" Grid.Row="1" Grid.Column="0" Margin="0,5"/>
+                                    <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+
+                                    <TextBlock Text="Backup Location:" Grid.Row="2" Grid.Column="0" Margin="0,5"/>
+                                    <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5"/>
+                                </Grid>
+
+                                <TextBlock Text="Email Settings" Style="{StaticResource HeaderStyle}"/>
+                                <Grid Margin="0,5,0,10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="150"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+
+                                    <TextBlock Text="SMTP Server:" Grid.Row="0" Grid.Column="0" Margin="0,5"/>
+                                    <TextBox Grid.Row="0" Grid.Column="1" Margin="0,5"/>
+
+                                    <TextBlock Text="Port:" Grid.Row="1" Grid.Column="0" Margin="0,5"/>
+                                    <TextBox Grid.Row="1" Grid.Column="1" Margin="0,5"/>
+
+                                    <TextBlock Text="Sender Email:" Grid.Row="2" Grid.Column="0" Margin="0,5"/>
+                                    <TextBox Grid.Row="2" Grid.Column="1" Margin="0,5"/>
+                                </Grid>
+                            </StackPanel>
+                        </GroupBox>
                     </StackPanel>
                 </ScrollViewer>
             </TabItem>
@@ -196,16 +374,26 @@
         <!-- Footer with Save/Cancel Buttons -->
         <StackPanel Grid.Row="2" 
                     Orientation="Horizontal" 
-                    HorizontalAlignment="Right">
+                    HorizontalAlignment="Right"
+                    Margin="0,10,0,0">
             <Button x:Name="btnSave" 
                     Content="Save Changes" 
-                    Width="100" 
+                    Width="120" 
                     Margin="0,0,10,0"
-                    Click="btnSave_Click"/>
+                    Click="btnSave_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#40000000" Direction="320" ShadowDepth="3" BlurRadius="5"/>
+                </Button.Effect>
+            </Button>
             <Button x:Name="btnCancel" 
                     Content="Cancel" 
-                    Width="100"
-                    Click="btnCancel_Click"/>
+                    Width="120"
+                    Background="#6c757d"
+                    Click="btnCancel_Click">
+                <Button.Effect>
+                    <DropShadowEffect Color="#40000000" Direction="320" ShadowDepth="3" BlurRadius="5"/>
+                </Button.Effect>
+            </Button>
         </StackPanel>
     </Grid>
 </Window>

@@ -84,7 +84,7 @@ namespace InventoryApp {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/Inventory managment;component/helpsupport.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/Inventory managment;V1.0.0.0;component/helpsupport.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\HelpSupport.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
